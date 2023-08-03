@@ -21,6 +21,7 @@ function redirect(name) {
         case "github": url = "https://github.com/justcata01"; break;
         case "highschool": url = "https://www.ctenergetic.ro/"; break;
         case "uni": url = "https://www.anmb.ro/"; break;
+        case "leetcode": url = "https://leetcode.com/cata01/"; break;
     }
     window.location = url;
 }
