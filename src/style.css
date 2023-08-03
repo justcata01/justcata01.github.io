@@ -22,3 +22,34 @@ section{
 .shown{
     opacity: 1;
 }
+
+
+.buttonGroup button{
+    background-color: #5e5d5e;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    height: 4vh;
+    text-align: center;
+}
+.buttonGroup button:not(:last-child){
+    border-right:none;
+}
+.buttonGroup:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+.buttonGroup button:hover{
+    background-color: #dee7fe;
+    color: black;
+    font-weight: bold;
+}
+button{
+    display: flex;
+    align-items: center;
+    background-color: #f7ed83;
+    min-width: 150px;
+}
