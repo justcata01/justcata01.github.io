@@ -37,18 +37,59 @@ section:nth-child(1){
     z-index: 1;
 }
 section:nth-child(1) .fixed{
-    width: 350px;
+    width: 25vw;
     transform: translate(-50%,-50%);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
+
 section:nth-child(2){
-    background-color: #1335bb;
+    background-color: #231852;
     top: 100vh;
     z-index: 2;
 }
 section:nth-child(2) .fixed{
-    width: 500px;
-    transform: translate(-50%,-75%);
+    width: 60vw;
+    transform: translate(-50%,-50%);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
 
+section:nth-child(3){
+    background-color: #412e4b;
+    top: 200vh;
+    z-index: 1;
+}
+section:nth-child(3) .fixed{
+    width: 25vw;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.buttonGroup button{
+    background-color: #693572;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    height: 4vh;
+    text-align: center;
+}
+.buttonGroup button:not(:last-child){
+    border-right:none;
+}
+.buttonGroup:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+.buttonGroup button:hover{
+    background-color: #dee7fe;
+    color: black;
+    font-weight: bold;
+}
+button{
+    display: flex;
+    align-items: center;
+    background-color: #f7ed83;
+    min-width: 150px;
+}
