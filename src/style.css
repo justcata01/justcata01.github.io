@@ -15,6 +15,27 @@ section{
     min-height: 100vh;
 }
 
+#intro{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 75vh;
+}
+
+#mid{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 50vh;
+}
+
+#end{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
 .hidden{
     opacity: 0;
     transition: all 1s;
@@ -23,7 +44,12 @@ section{
     opacity: 1;
 }
 
-
+.buttonGroup{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
 .buttonGroup button{
     background-color: #5e5d5e;
     border: 2px solid rgb(255, 255, 255);
@@ -32,6 +58,7 @@ section{
     cursor: pointer;
     float: left;
     height: 4vh;
+    width: 100vw;
     text-align: center;
 }
 .buttonGroup button:not(:last-child){
@@ -51,5 +78,7 @@ button{
     display: flex;
     align-items: center;
     background-color: #f7ed83;
-    min-width: 150px;
+    min-width: 300px;
+    min-height: 40px;
+    margin: 2px;
 }
